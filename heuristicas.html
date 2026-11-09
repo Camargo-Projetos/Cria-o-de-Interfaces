@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="As 10 heurísticas de Nielsen aplicadas ao site Interface Clara.">
+  <meta name="theme-color" content="#1e40af">
+  <title>Usabilidade e as heurísticas de Nielsen — Interface Clara</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/heuristicas.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><svg class="brand-icone" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><rect x="2" y="2" width="24" height="24" rx="6" fill="#fff"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1e40af" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Interface Clara</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html" aria-current="page">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Usabilidade</span></li>
+          </ol>
+        </nav>
+        <h1>Usabilidade e as heurísticas de Nielsen</h1>
+        <p class="lead">Usabilidade é a facilidade com que uma pessoa realiza uma tarefa na interface. As heurísticas de Nielsen são o guia mais usado para avaliá-la.</p>
+        <p class="etiqueta">Responsável: João Manoel Camargo</p>
+      </div>
+    </div>
+
+    <div class="container layout">
+      <aside class="toc">
+        <nav aria-label="Nesta página">
+          <h2 class="toc-titulo">Nesta página</h2>
+          <ul>
+          <li><a href="#o-que-e">O que são as heurísticas</a></li>
+          <li><a href="#tabela">As 10 heurísticas aplicadas</a></li>
+          <li><a href="#exemplo-erro">Exemplo: mensagem de erro útil</a></li>
+          <li><a href="#ver-na-pratica">Onde ver na prática</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="conteudo">
+      <section id="o-que-e" aria-labelledby="o-que-e-t">
+        <h2 id="o-que-e-t">O que são as heurísticas</h2>
+        <p>São princípios de usabilidade criados por Jakob Nielsen, a partir da prática. Especialistas os usam para avaliar a qualidade de interfaces. São 10 conceitos e a base das avaliações heurísticas.</p>
+        <p>Abaixo, cada heurística é ligada a uma decisão concreta tomada neste site.</p>
+      </section>
+
+      <section id="tabela" aria-labelledby="tabela-t">
+        <h2 id="tabela-t">As 10 heurísticas aplicadas</h2>
+        <div class="tabela-wrap" role="region" aria-label="Heurísticas de Nielsen e sua aplicação no site" tabindex="0">
+          <table>
+            <caption>Heurísticas de Nielsen e sua aplicação no site</caption>
+            <thead><tr><th scope="col">Nº</th><th scope="col">Heurística</th><th scope="col">O que diz</th><th scope="col">Como aplicamos aqui</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>Visibilidade do status do sistema</td><td>Informar o que está acontecendo, com feedback no tempo certo.</td><td>O menu destaca a página atual (fundo branco e sublinhado). O caminho “Você está em” aparece no topo. Botões e links mudam de aparência ao passar o mouse.</td></tr>
+            <tr><td>2</td><td>Correspondência com o mundo real</td><td>Usar linguagem e metáforas familiares ao usuário.</td><td>Textos em português simples. Rótulos como “Início”, “Enviar mensagem” e “Limpar campos”.</td></tr>
+            <tr><td>3</td><td>Controle e liberdade do usuário</td><td>Oferecer saídas rápidas para ações feitas por engano.</td><td>Menu no topo de todas as páginas, botões “Anterior” e “Próxima”, link “Voltar ao topo” e botão “Limpar campos” no formulário.</td></tr>
+            <tr><td>4</td><td>Consistência e padrões</td><td>Manter termos e ações iguais para a mesma função.</td><td>Cabeçalho, menu e rodapé idênticos em todas as páginas. Botões laranja sempre indicam a ação principal.</td></tr>
+            <tr><td>5</td><td>Prevenção de erros</td><td>Evitar que o erro aconteça.</td><td>O formulário tem campos obrigatórios, tipo de e-mail e limite de caracteres, para o navegador avisar antes do envio.</td></tr>
+            <tr><td>6</td><td>Reconhecimento em vez de relembrança</td><td>Deixar objetos e ações visíveis, sem exigir memória.</td><td>Todas as páginas ficam no menu, com nomes claros. Os símbolos sempre vêm com texto.</td></tr>
+            <tr><td>7</td><td>Flexibilidade e eficiência de uso</td><td>Oferecer atalhos para novatos e experientes.</td><td>Link “Pular para o conteúdo”, cartões da página inicial como atalhos e índice “Nesta página”.</td></tr>
+            <tr><td>8</td><td>Estética e design minimalista</td><td>Remover o que não é essencial.</td><td>Poucas cores, bastante espaço em branco e uma ideia por seção.</td></tr>
+            <tr><td>9</td><td>Ajudar a reconhecer, diagnosticar e corrigir erros</td><td>Mensagens claras que sugerem a solução.</td><td>Os campos de texto do formulário trazem uma dica de preenchimento. O exemplo de mensagem de erro está mais abaixo nesta página.</td></tr>
+            <tr><td>10</td><td>Ajuda e documentação</td><td>Oferecer ajuda curta, focada na tarefa e fácil de achar.</td><td>Seção “Ajuda: como navegar” na página inicial, com perguntas e respostas curtas.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="exemplo-erro" aria-labelledby="exemplo-erro-t">
+        <h2 id="exemplo-erro-t">Exemplo: mensagem de erro útil</h2>
+        <p>A heurística 9 pede mensagens que identifiquem o problema e sugiram a solução. Compare:</p>
+        <div class="comparacao">
+          <div class="ex ex-ruim">
+            <h3><span aria-hidden="true">✗</span> Evite</h3>
+            <p class="msg">Erro 400.</p>
+            <p>Não diz o que houve nem como resolver.</p>
+          </div>
+          <div class="ex ex-bom">
+            <h3><span aria-hidden="true">✓</span> Prefira</h3>
+            <p class="msg">O e-mail precisa ter um “@”. Exemplo: nome@email.com</p>
+            <p>Diz o problema e mostra como corrigir.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ver-na-pratica" aria-labelledby="ver-na-pratica-t">
+        <h2 id="ver-na-pratica-t">Onde ver na prática</h2>
+        <ul>
+          <li>Menu e caminho de navegação: veja o topo desta página.</li>
+          <li>Prevenção de erros e dicas: <a href="acessibilidade.html#formulario">formulário de exemplo</a>.</li>
+          <li>Ajuda curta: <a href="index.html#ajuda-t">Ajuda: como navegar</a>.</li>
+        </ul>
+      </section>
+
+  <nav class="pager" aria-label="Navegação entre páginas">
+    <a class="ant" rel="prev" href="index.html"><span aria-hidden="true">←&nbsp;</span> Anterior: Início</a>
+    <a class="prox" rel="next" href="ux.html">Próxima: Experiência (UX) <span aria-hidden="true">&nbsp;→</span></a>
+  </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Interface Clara</h2>
+          <p>Site de demonstração de usabilidade, experiência do usuário, acessibilidade e responsividade, feito somente com HTML e CSS.</p>
+        </div>
+        <nav aria-label="Páginas do site">
+          <h2>Páginas</h2>
+          <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Equipe</h2>
+          <ul>
+            <li>João Manoel Camargo</li>
+            <li>Lucas Samuel dos Santos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Atividade da disciplina de Interação Humano-Computador.</p>
+        <a href="#topo">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
