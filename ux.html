@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Planos da experiência do usuário, prototipação e signos aplicados ao site Interface Clara.">
+  <meta name="theme-color" content="#1e40af">
+  <title>Experiência do usuário (UX) — Interface Clara</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/ux.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><svg class="brand-icone" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><rect x="2" y="2" width="24" height="24" rx="6" fill="#fff"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1e40af" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Interface Clara</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html" aria-current="page">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Experiência (UX)</span></li>
+          </ol>
+        </nav>
+        <h1>Experiência do usuário (UX)</h1>
+        <p class="lead">UX é o conjunto de percepções e sensações de quem usa o site, do primeiro clique até a saída. Aqui mostramos as decisões que tornam a experiência simples e agradável.</p>
+        <p class="etiqueta">Responsável: João Manoel Camargo</p>
+      </div>
+    </div>
+
+    <div class="container layout">
+      <aside class="toc">
+        <nav aria-label="Nesta página">
+          <h2 class="toc-titulo">Nesta página</h2>
+          <ul>
+          <li><a href="#planos">Os cinco planos da UX</a></li>
+          <li><a href="#prototipacao">Prototipação: baixa e alta fidelidade</a></li>
+          <li><a href="#signos">Signos: o que cada símbolo comunica</a></li>
+          <li><a href="#fluxo">Fluxo de navegação</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="conteudo">
+      <section id="planos" aria-labelledby="planos-t">
+        <h2 id="planos-t">Os cinco planos da UX</h2>
+        <p>O design de uma interface vai do abstrato ao concreto: começa nas ideias e termina na aparência. Cada plano apoia o seguinte.</p>
+        <div class="tabela-wrap" role="region" aria-label="Planos da experiência do usuário e decisões tomadas" tabindex="0">
+          <table>
+            <caption>Planos da experiência do usuário e decisões tomadas</caption>
+            <thead><tr><th scope="col">Plano</th><th scope="col">Pergunta que responde</th><th scope="col">Decisão neste site</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">1. Estratégia</th><td>Por que o site existe e para quem?</td><td>Explicar conceitos de IHC na prática, para colegas de curso e iniciantes.</td></tr>
+            <tr><th scope="row">2. Escopo</th><td>O que o site terá?</td><td>Seis páginas de conteúdo, um formulário de exemplo e nenhum login.</td></tr>
+            <tr><th scope="row">3. Estrutura</th><td>Como as páginas se conectam?</td><td>Todas no mesmo nível, ligadas por um menu único. Qualquer página fica a um clique de distância.</td></tr>
+            <tr><th scope="row">4. Esqueleto</th><td>Onde fica cada elemento?</td><td>Cabeçalho, conteúdo e rodapé na mesma ordem em todas as páginas. Índice lateral nas páginas internas.</td></tr>
+            <tr><th scope="row">5. Superfície</th><td>Qual é a aparência?</td><td>Paleta azul e laranja, fonte sem serifa e botões grandes. Veja <a href="cores-tipografia.html">Cores e tipografia</a>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="prototipacao" aria-labelledby="prototipacao-t">
+        <h2 id="prototipacao-t">Prototipação: baixa e alta fidelidade</h2>
+        <p>O protótipo é o início do desenvolvimento concreto da interface. Ele permite receber feedback rápido, poupar tempo e resolver problemas antes de escrever o código.</p>
+        <div class="tabela-wrap" role="region" aria-label="Tipos de prototipação" tabindex="0">
+          <table>
+            <caption>Tipos de prototipação</caption>
+            <thead><tr><th scope="col">Característica</th><th scope="col">Baixa fidelidade (lo-fi)</th><th scope="col">Alta fidelidade (hi-fi)</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Aparência</th><td>Esboços simples, em papel ou quadro.</td><td>Muito parecida com o produto final.</td></tr>
+            <tr><th scope="row">Foco</th><td>Funções e ideias, não a aparência.</td><td>Detalhes visuais e funcionais.</td></tr>
+            <tr><th scope="row">Custo e velocidade</th><td>Baixo custo, criação rápida e fácil de mudar.</td><td>Mais trabalho para produzir.</td></tr>
+            <tr><th scope="row">Vantagem</th><td>Testar várias ideias com pouco esforço.</td><td>O usuário reage a algo quase real.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Este site em HTML e CSS é um protótipo de <strong>alta fidelidade</strong>: tem cores, fontes e navegação reais, mas não guarda dados. Antes dele, o ideal é esboçar as telas em papel (baixa fidelidade).</p>
+      </section>
+
+      <section id="signos" aria-labelledby="signos-t">
+        <h2 id="signos-t">Signos: o que cada símbolo comunica</h2>
+        <p>Na engenharia semiótica, a interface é uma mensagem do designer para o usuário. Um signo é tudo o que representa algo para alguém. Por isso, nenhum símbolo aparece sozinho neste site: todos vêm acompanhados de texto.</p>
+        <div class="tabela-wrap" role="region" aria-label="Símbolos usados no site e sua interpretação" tabindex="0">
+          <table>
+            <caption>Símbolos usados no site e sua interpretação</caption>
+            <thead><tr><th scope="col">Símbolo</th><th scope="col">Significado literal</th><th scope="col">Como o usuário interpreta</th><th scope="col">Onde aparece</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">←  →</th><td>Setas para a esquerda e para a direita.</td><td>Ir para a página anterior ou seguinte.</td><td>Botões no fim das páginas</td></tr>
+            <tr><th scope="row">↑</th><td>Seta para cima.</td><td>Subir até o início da página.</td><td>“Voltar ao topo” no rodapé</td></tr>
+            <tr><th scope="row">›</th><td>Sinal de maior que, em ponta.</td><td>Separar os níveis do caminho.</td><td>Caminho “Você está em”</td></tr>
+            <tr><th scope="row">✓  ✗</th><td>Marca de certo e de errado.</td><td>Aprovado e reprovado.</td><td>Exemplo na página de usabilidade</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="fluxo" aria-labelledby="fluxo-t">
+        <h2 id="fluxo-t">Fluxo de navegação</h2>
+        <p>O caminho principal do usuário é curto e previsível:</p>
+        <ol class="fluxo">
+          <li>Chega à página <a href="index.html">Início</a> e vê os cinco temas.</li>
+          <li>Escolhe um tema no cartão ou no menu.</li>
+          <li>Lê a página, usando o índice “Nesta página” se quiser pular para um trecho.</li>
+          <li>Segue em ordem pelos botões “Próxima” ou volta pelo menu.</li>
+        </ol>
+      </section>
+
+  <nav class="pager" aria-label="Navegação entre páginas">
+    <a class="ant" rel="prev" href="heuristicas.html"><span aria-hidden="true">←&nbsp;</span> Anterior: Usabilidade</a>
+    <a class="prox" rel="next" href="cores-tipografia.html">Próxima: Cores e tipografia <span aria-hidden="true">&nbsp;→</span></a>
+  </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Interface Clara</h2>
+          <p>Site de demonstração de usabilidade, experiência do usuário, acessibilidade e responsividade, feito somente com HTML e CSS.</p>
+        </div>
+        <nav aria-label="Páginas do site">
+          <h2>Páginas</h2>
+          <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Equipe</h2>
+          <ul>
+            <li>João Manoel Camargo</li>
+            <li>Lucas Samuel dos Santos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Atividade da disciplina de Interação Humano-Computador.</p>
+        <a href="#topo">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
