@@ -1,14 +1,13 @@
 # Interface Clara
 
-Site de demonstração de **usabilidade, experiência do usuário (UX), acessibilidade e responsividade**, feito somente com HTML e CSS (sem JavaScript e sem frameworks). Atividade da disciplina de Interação Humano-Computador.
+Site de demonstração de **usabilidade, experiência do usuário (UX), acessibilidade e responsividade**, feito somente com HTML e CSS .
 
 ## 1. Acesso ao site
 
 | Item | Endereço |
 |---|---|
-| Site (GitHub Pages) | `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/` |
+| Site (GitHub Pages) | `https://camargo-projetos.github.io/Cria-o-de-Interfaces/` |
 
-> Substituir pelo endereço real depois de ativar o GitHub Pages (Settings → Pages → branch `main`, pasta `/ (root)`).
 
 ## 2. Páginas e navegação
 

@@ -1,9 +1,5 @@
-/* ux.css — estilos exclusivos da página de experiência do usuário */
-
-/* Destaque do nome do plano */
 tbody th { color: var(--primaria-escura); white-space: nowrap; }
 
-/* Fluxo de navegação em passos numerados */
 .fluxo { list-style: none; padding: 0; counter-reset: passo; }
 .fluxo li {
   position: relative; counter-increment: passo;
@@ -16,11 +12,9 @@ tbody th { color: var(--primaria-escura); white-space: nowrap; }
   display: grid; place-items: center;
   background: var(--primaria); color: #fff; font-weight: 800;
 }
-/* Linha que liga os passos */
 .fluxo li:not(:last-child)::after {
   content: ""; position: absolute; left: 1.02rem; top: 2.5rem; bottom: -0.6rem;
   width: 2px; background: var(--borda);
 }
 
-/* Símbolos grandes na primeira coluna da tabela de signos */
 #signos tbody th { font-size: 1.2rem; }

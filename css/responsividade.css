@@ -1,0 +1,21 @@
+td code { overflow-wrap: anywhere; }
+
+.demo { display: grid; gap: 0.75rem; grid-template-columns: 1fr; margin-bottom: 0.75rem; }
+.demo-caixa {
+  display: grid; place-items: center;
+  min-height: 5rem; border-radius: var(--raio);
+  background: var(--primaria); color: #fff;
+  font-size: 1.6rem; font-weight: 800;
+}
+
+.demo-tamanho::after { content: "Celular (menos de 640 px)"; }
+
+@media (min-width: 40em) {
+  .demo { grid-template-columns: repeat(2, 1fr); }
+  .demo-tamanho::after { content: "Tablet (de 640 a 1023 px)"; }
+}
+
+@media (min-width: 64em) {
+  .demo { grid-template-columns: repeat(4, 1fr); }
+  .demo-tamanho::after { content: "Computador (1024 px ou mais)"; }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como o layout do site Interface Clara se adapta a celular, tablet e computador.">
+  <meta name="theme-color" content="#1e40af">
+  <title>Responsividade — Interface Clara</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/responsividade.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><svg class="brand-icone" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><rect x="2" y="2" width="24" height="24" rx="6" fill="#fff"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1e40af" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Interface Clara</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html" aria-current="page">Responsividade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Responsividade</span></li>
+          </ol>
+        </nav>
+        <h1>Responsividade</h1>
+        <p class="lead">Um design responsivo se ajusta ao tamanho da tela. A mesma página funciona bem em um celular, em um tablet e em um computador.</p>
+        <p class="etiqueta">Responsável: Lucas Samuel dos Santos</p>
+      </div>
+    </div>
+
+    <div class="container layout">
+      <aside class="toc">
+        <nav aria-label="Nesta página">
+          <h2 class="toc-titulo">Nesta página</h2>
+          <ul>
+          <li><a href="#tres-pilares">Os três pilares</a></li>
+          <li><a href="#tecnicas">Técnicas usadas neste site</a></li>
+          <li><a href="#demo">Veja a adaptação em ação</a></li>
+          <li><a href="#pontos-de-quebra">Pontos de quebra</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="conteudo">
+      <section id="tres-pilares" aria-labelledby="tres-pilares-t">
+        <h2 id="tres-pilares-t">Os três pilares</h2>
+        <ul>
+          <li><strong>Layout fluido:</strong> medidas relativas (%, rem, fr) em vez de pixels fixos.</li>
+          <li><strong>Mídias flexíveis:</strong> imagens e tabelas que nunca ultrapassam a largura da tela.</li>
+          <li><strong>Media queries:</strong> regras de CSS que só valem a partir de certa largura.</li>
+        </ul>
+        <p>Seguimos a abordagem <em>mobile-first</em>: o CSS base serve para telas pequenas e as regras para telas maiores são acrescentadas depois.</p>
+      </section>
+
+      <section id="tecnicas" aria-labelledby="tecnicas-t">
+        <h2 id="tecnicas-t">Técnicas usadas neste site</h2>
+        <div class="tabela-wrap" role="region" aria-label="Técnicas de responsividade e onde aparecem" tabindex="0">
+          <table>
+            <caption>Técnicas de responsividade e onde aparecem</caption>
+            <thead><tr><th scope="col">Técnica</th><th scope="col">Exemplo de código</th><th scope="col">Onde aparece</th></tr></thead>
+            <tbody>
+            <tr><td>Meta viewport</td><td><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></td><td>Em todas as páginas</td></tr>
+            <tr><td>Grade flexível</td><td><code>grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))</code></td><td>Cartões da página inicial</td></tr>
+            <tr><td>Quebra de linha no menu</td><td><code>display: flex; flex-wrap: wrap</code></td><td>Menu principal</td></tr>
+            <tr><td>Fonte fluida</td><td><code>font-size: clamp(1.9rem, 1.4rem + 2.4vw, 3rem)</code></td><td>Títulos principais</td></tr>
+            <tr><td>Rolagem em tabelas</td><td><code>overflow-x: auto</code></td><td>Todas as tabelas</td></tr>
+            <tr><td>Media query</td><td><code>@media (min-width: 64em) { … }</code></td><td>Índice lateral nas páginas internas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="demo" aria-labelledby="demo-t">
+        <h2 id="demo-t">Veja a adaptação em ação</h2>
+        <p>As quatro caixas abaixo mudam de posição conforme a largura da janela. Redimensione a janela do navegador ou gire o celular.</p>
+        <div class="demo" aria-hidden="true">
+          <div class="demo-caixa">1</div>
+          <div class="demo-caixa">2</div>
+          <div class="demo-caixa">3</div>
+          <div class="demo-caixa">4</div>
+        </div>
+        <p class="demo-legenda"><strong>Tamanho de tela atual:</strong> <span class="demo-tamanho"></span></p>
+      </section>
+
+      <section id="pontos-de-quebra" aria-labelledby="pontos-de-quebra-t">
+        <h2 id="pontos-de-quebra-t">Pontos de quebra</h2>
+        <div class="tabela-wrap" role="region" aria-label="Pontos de quebra e comportamento do layout" tabindex="0">
+          <table>
+            <caption>Pontos de quebra e comportamento do layout</caption>
+            <thead><tr><th scope="col">Faixa</th><th scope="col">Largura</th><th scope="col">O que muda</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Celular</th><td>Até 39,99em (cerca de 640 px)</td><td>Uma coluna. Rodapé empilhado. Índice “Nesta página” acima do conteúdo.</td></tr>
+            <tr><th scope="row">Tablet</th><td>A partir de 40em</td><td>Rodapé em três colunas. Botões “Anterior” e “Próxima” lado a lado. Campos de formulário em duas colunas.</td></tr>
+            <tr><th scope="row">Computador</th><td>A partir de 64em (cerca de 1024 px)</td><td>Índice “Nesta página” fixo na lateral esquerda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+  <nav class="pager" aria-label="Navegação entre páginas">
+    <a class="ant" rel="prev" href="acessibilidade.html"><span aria-hidden="true">←&nbsp;</span> Anterior: Acessibilidade</a>
+    <a class="prox" rel="next" href="index.html">Voltar ao início: Início <span aria-hidden="true">&nbsp;→</span></a>
+  </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Interface Clara</h2>
+          <p>Site de demonstração de usabilidade, experiência do usuário, acessibilidade e responsividade, feito somente com HTML e CSS.</p>
+        </div>
+        <nav aria-label="Páginas do site">
+          <h2>Páginas</h2>
+          <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Equipe</h2>
+          <ul>
+            <li>João Manoel Camargo</li>
+            <li>Lucas Samuel dos Santos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Atividade da disciplina de Interação Humano-Computador.</p>
+        <a href="#topo">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

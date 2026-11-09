@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paleta de cores, contraste e escolha tipográfica do site Interface Clara.">
+  <meta name="theme-color" content="#1e40af">
+  <title>Cores e tipografia — Interface Clara</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cores-tipografia.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><svg class="brand-icone" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><rect x="2" y="2" width="24" height="24" rx="6" fill="#fff"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1e40af" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Interface Clara</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html" aria-current="page">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Cores e tipografia</span></li>
+          </ol>
+        </nav>
+        <h1>Cores e tipografia</h1>
+        <p class="lead">A cor organiza o conteúdo, destaca o que importa e orienta a interação. A tipografia garante que o texto seja lido sem esforço.</p>
+        <p class="etiqueta">Responsável: Lucas Samuel dos Santos</p>
+      </div>
+    </div>
+
+    <div class="container layout">
+      <aside class="toc">
+        <nav aria-label="Nesta página">
+          <h2 class="toc-titulo">Nesta página</h2>
+          <ul>
+          <li><a href="#paleta">Paleta de cores</a></li>
+          <li><a href="#significado">O significado das cores</a></li>
+          <li><a href="#tipografia">Tipografia</a></li>
+          <li><a href="#caixa-alta">Caixa alta e caixa baixa</a></li>
+          <li><a href="#regras">Regras que seguimos</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="conteudo">
+      <section id="paleta" aria-labelledby="paleta-t">
+        <h2 id="paleta-t">Paleta de cores</h2>
+        <p>Usamos poucas cores, cada uma com função bem definida. Todos os pares de texto e fundo têm contraste de pelo menos 4,5:1.</p>
+        <div class="amostras">
+          <div class="amostra am-primaria"><span class="am-aa" aria-hidden="true">Aa</span><strong>Azul</strong><code>#1e40af</code><span>Cabeçalho, links e títulos. Texto branco sobre azul: 8,72:1.</span></div>
+          <div class="amostra am-destaque"><span class="am-aa" aria-hidden="true">Aa</span><strong>Laranja</strong><code>#b45309</code><span>Somente botões de ação principal. Texto branco sobre laranja: 5,02:1.</span></div>
+          <div class="amostra am-texto"><span class="am-aa" aria-hidden="true">Aa</span><strong>Grafite</strong><code>#1b2333</code><span>Texto corrido. Sobre branco: 15,73:1.</span></div>
+          <div class="amostra am-suave"><span class="am-aa" aria-hidden="true">Aa</span><strong>Cinza-azulado</strong><code>#f2f5fb</code><span>Fundo de seções de apoio. Texto grafite sobre ele: 14,41:1.</span></div>
+        </div>
+      </section>
+
+      <section id="significado" aria-labelledby="significado-t">
+        <h2 id="significado-t">O significado das cores</h2>
+        <p>Cada cor transmite uma sensação. Escolhemos de acordo com o que o site quer comunicar.</p>
+        <div class="tabela-wrap" role="region" aria-label="Sensação de cada cor e uso no site" tabindex="0">
+          <table>
+            <caption>Sensação de cada cor e uso no site</caption>
+            <thead><tr><th scope="col">Cor</th><th scope="col">Sensação (conforme a aula)</th><th scope="col">Uso no site</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Azul</th><td>Frio, calma, suavidade.</td><td>Cor principal: passa tranquilidade para quem lê.</td></tr>
+            <tr><th scope="row">Laranja</th><td>Dinamismo, expansão.</td><td>Chama a atenção para a ação principal.</td></tr>
+            <tr><th scope="row">Preto e cinza</th><td>O preto destaca as demais cores. O cinza reduz as sensações.</td><td>Textos e bordas, para não competir com o azul e o laranja.</td></tr>
+            <tr><th scope="row">Branco</th><td>Pureza, paz.</td><td>Fundo geral, com bastante espaço livre.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="tipografia" aria-labelledby="tipografia-t">
+        <h2 id="tipografia-t">Tipografia</h2>
+        <p>Fontes sem serifa são indicadas para produtos digitais. Por isso usamos a fonte do sistema do próprio aparelho, que carrega rápido e é familiar.</p>
+        <div class="tipos">
+          <div class="tipo">
+            <h3>Sem serifa (usada)</h3>
+            <p class="t-sans">Interface clara, leitura fácil.</p>
+          </div>
+          <div class="tipo">
+            <h3>Com serifa (impressos)</h3>
+            <p class="t-serif">Interface clara, leitura fácil.</p>
+          </div>
+          <div class="tipo">
+            <h3>Espaçamento fixo (código)</h3>
+            <p class="t-mono">Interface clara, leitura fácil.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="caixa-alta" aria-labelledby="caixa-alta-t">
+        <h2 id="caixa-alta-t">Caixa alta e caixa baixa</h2>
+        <p>Textos longos em caixa alta reduzem o ritmo de leitura e parecem gritar. Todas as letras maiúsculas têm a mesma altura, o que dificulta distinguir uma da outra.</p>
+        <div class="comparacao">
+          <div class="ex ex-ruim">
+            <h3><span aria-hidden="true">✗</span> Evite</h3>
+            <p class="caixa-alta">Para ler este texto longo é preciso mais esforço do que o necessário.</p>
+          </div>
+          <div class="ex ex-bom">
+            <h3><span aria-hidden="true">✓</span> Prefira</h3>
+            <p>Para ler este texto longo é preciso menos esforço.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="regras" aria-labelledby="regras-t">
+        <h2 id="regras-t">Regras que seguimos</h2>
+        <ul>
+          <li>Manter o mesmo padrão de cores em todas as páginas.</li>
+          <li>Não usar a mesma cor para funções diferentes: o laranja é só para ações.</li>
+          <li>Texto corrido com 17 px, entrelinha de 1,65 e linhas curtas para descansar a vista.</li>
+          <li>Títulos que crescem e diminuem conforme a largura da tela.</li>
+          <li>Caixa alta só em palavras isoladas, nunca em parágrafos.</li>
+        </ul>
+      </section>
+
+  <nav class="pager" aria-label="Navegação entre páginas">
+    <a class="ant" rel="prev" href="ux.html"><span aria-hidden="true">←&nbsp;</span> Anterior: Experiência (UX)</a>
+    <a class="prox" rel="next" href="acessibilidade.html">Próxima: Acessibilidade <span aria-hidden="true">&nbsp;→</span></a>
+  </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Interface Clara</h2>
+          <p>Site de demonstração de usabilidade, experiência do usuário, acessibilidade e responsividade, feito somente com HTML e CSS.</p>
+        </div>
+        <nav aria-label="Páginas do site">
+          <h2>Páginas</h2>
+          <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Equipe</h2>
+          <ul>
+            <li>João Manoel Camargo</li>
+            <li>Lucas Samuel dos Santos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Atividade da disciplina de Interação Humano-Computador.</p>
+        <a href="#topo">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

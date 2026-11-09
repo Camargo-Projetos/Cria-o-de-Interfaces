@@ -1,6 +1,3 @@
-/* home.css — estilos exclusivos da página inicial */
-
-/* Faixa principal */
 .hero {
   background: linear-gradient(135deg, var(--primaria) 0%, var(--primaria-escura) 100%);
   color: #fff;
@@ -10,20 +7,17 @@
 .hero h1 { color: #fff; max-width: 22ch; }
 .hero .lead { color: #fff; }
 .hero-sobre {
-  color: #bfdbfe;            /* sobre #1e40af: 6,14:1 */
+  color: #bfdbfe;
   font-weight: 700; margin-bottom: 0.5rem;
 }
 .hero-acoes { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 0; }
 
-/* Blocos de conteúdo */
 .bloco { padding-block: 2.5rem; }
 .bloco-suave { background: var(--fundo-suave); }
 .bloco > .container > p { max-width: 48rem; }
 
-/* Tabela da página inicial usa o fundo branco sobre a faixa suave */
 .bloco-suave .tabela-wrap { background: #fff; }
 
-/* Ajuda (perguntas e respostas) */
 .ajuda { max-width: 48rem; }
 details {
   border: 1px solid var(--borda); border-radius: var(--raio);

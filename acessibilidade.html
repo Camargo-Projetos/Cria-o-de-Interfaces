@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Diretrizes de acessibilidade aplicadas ao site Interface Clara, com formulário acessível de exemplo.">
+  <meta name="theme-color" content="#1e40af">
+  <title>Acessibilidade — Interface Clara</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/acessibilidade.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><svg class="brand-icone" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><rect x="2" y="2" width="24" height="24" rx="6" fill="#fff"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1e40af" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Interface Clara</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html" aria-current="page">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Acessibilidade</span></li>
+          </ol>
+        </nav>
+        <h1>Acessibilidade</h1>
+        <p class="lead">Um site acessível pode ser usado por pessoas com baixa visão, surdez, limitações de movimento, dificuldades de aprendizagem e outras necessidades.</p>
+        <p class="etiqueta">Responsável: Lucas Samuel dos Santos</p>
+      </div>
+    </div>
+
+    <div class="container layout">
+      <aside class="toc">
+        <nav aria-label="Nesta página">
+          <h2 class="toc-titulo">Nesta página</h2>
+          <ul>
+          <li><a href="#diretrizes">Diretrizes e como aplicamos</a></li>
+          <li><a href="#formulario">Formulário acessível de exemplo</a></li>
+          <li><a href="#teste-teclado">Teste você mesmo</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="conteudo">
+      <section id="diretrizes" aria-labelledby="diretrizes-t">
+        <h2 id="diretrizes-t">Diretrizes e como aplicamos</h2>
+        <p>As diretrizes de acessibilidade para conteúdo web (WCAG) se organizam em princípios. A aula apresenta três: perceptíveis, operáveis e compreensíveis. Incluímos também o quarto princípio da WCAG, o de conteúdo robusto.</p>
+        <div class="tabela-wrap" role="region" aria-label="Princípios da WCAG e sua aplicação no site" tabindex="0">
+          <table>
+            <caption>Princípios da WCAG e sua aplicação no site</caption>
+            <thead><tr><th scope="col">Princípio</th><th scope="col">Diretriz</th><th scope="col">Como aplicamos aqui</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Perceptível</th><td>Alternativas em texto, layout simples e separação clara entre planos.</td><td>Símbolos sempre acompanhados de texto. Ícones decorativos escondidos de leitores de tela. Contraste mínimo de 4,5:1.</td></tr>
+            <tr><th scope="row">Operável</th><td>Funções disponíveis pelo teclado, tempo suficiente e formas de navegar.</td><td>Tudo funciona com <kbd>Tab</kbd> e <kbd>Enter</kbd>. Contorno de foco visível, link “Pular para o conteúdo” e alvos de toque de 44 px no menu, nos botões e no índice. Nada tem limite de tempo.</td></tr>
+            <tr><th scope="row">Compreensível</th><td>Texto legível, páginas previsíveis e ajuda para evitar erros.</td><td>Idioma da página declarado (pt-BR), menu igual em todas as páginas e campos de formulário com rótulo e dica.</td></tr>
+            <tr><th scope="row">Robusto</th><td>Código que leitores de tela e navegadores interpretam bem.</td><td>Marcação semântica: <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code> e <code>footer</code>. Página atual marcada com <code>aria-current</code>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="formulario" aria-labelledby="formulario-t">
+        <h2 id="formulario-t">Formulário acessível de exemplo</h2>
+        <p>Este formulário é só uma demonstração: nenhum dado é enviado a lugar algum. Experimente deixar um campo vazio ou digitar um e-mail sem “@” e aperte “Enviar mensagem”: o navegador avisa o problema.</p>
+        <form class="formulario" action="#formulario" method="get">
+          <p class="obrigatorio-info">Campos com <span aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> são obrigatórios.</p>
+          <div class="campo">
+            <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required aria-describedby="nome-dica">
+            <p class="dica" id="nome-dica">Como você gostaria de ser chamado.</p>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-dica">
+            <p class="dica" id="email-dica">Exemplo: nome@email.com</p>
+          </div>
+          <div class="campo campo-largo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="elogio">Elogio</option>
+            </select>
+          </div>
+          <div class="campo campo-largo">
+            <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+            <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" required aria-describedby="mensagem-dica"></textarea>
+            <p class="dica" id="mensagem-dica">Escreva até 500 caracteres.</p>
+          </div>
+          <fieldset class="campo">
+            <legend>Como prefere receber a resposta?</legend>
+            <label class="opcao"><input type="radio" name="resposta" value="email" checked> Por e-mail</label>
+            <label class="opcao"><input type="radio" name="resposta" value="nenhuma"> Não preciso de resposta</label>
+          </fieldset>
+          <p class="acoes">
+            <button class="btn btn-principal" type="submit">Enviar mensagem</button>
+            <button class="btn btn-secundario" type="reset">Limpar campos</button>
+          </p>
+        </form>
+      </section>
+
+      <section id="teste-teclado" aria-labelledby="teste-teclado-t">
+        <h2 id="teste-teclado-t">Teste você mesmo</h2>
+        <p>Quatro verificações simples que qualquer pessoa pode fazer:</p>
+        <div class="tabela-wrap" role="region" aria-label="Testes manuais de acessibilidade" tabindex="0">
+          <table>
+            <caption>Testes manuais de acessibilidade</caption>
+            <thead><tr><th scope="col">Teste</th><th scope="col">Como fazer</th><th scope="col">O que esperar</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Teclado</th><td>Use só <kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd> e <kbd>Enter</kbd>.</td><td>Chegar a todos os links e botões, sempre vendo onde está o foco.</td></tr>
+            <tr><th scope="row">Zoom</th><td>Aumente o zoom do navegador para 200%.</td><td>O texto cresce e nada fica cortado ou sobreposto.</td></tr>
+            <tr><th scope="row">Sem mouse</th><td>Guarde o mouse e navegue pelas páginas.</td><td>Todas as páginas são alcançadas pelo menu.</td></tr>
+            <tr><th scope="row">Leitor de tela</th><td>Ative o leitor do seu aparelho e percorra os títulos.</td><td>Os títulos formam uma sequência lógica, de h1 a h3.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+  <nav class="pager" aria-label="Navegação entre páginas">
+    <a class="ant" rel="prev" href="cores-tipografia.html"><span aria-hidden="true">←&nbsp;</span> Anterior: Cores e tipografia</a>
+    <a class="prox" rel="next" href="responsividade.html">Próxima: Responsividade <span aria-hidden="true">&nbsp;→</span></a>
+  </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Interface Clara</h2>
+          <p>Site de demonstração de usabilidade, experiência do usuário, acessibilidade e responsividade, feito somente com HTML e CSS.</p>
+        </div>
+        <nav aria-label="Páginas do site">
+          <h2>Páginas</h2>
+          <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Equipe</h2>
+          <ul>
+            <li>João Manoel Camargo</li>
+            <li>Lucas Samuel dos Santos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Atividade da disciplina de Interação Humano-Computador.</p>
+        <a href="#topo">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,15 +1,9 @@
-/* heuristicas.css — estilos exclusivos da página de usabilidade */
-
-/* Tabela de 4 colunas precisa de mais largura antes de rolar */
 .conteudo table { min-width: 46rem; }
 
-/* Número da heurística em destaque */
 tbody td:first-child { font-weight: 800; color: var(--primaria); width: 3.5rem; }
 
-/* Listras ajudam o olho a acompanhar a linha */
 tbody tr:nth-child(even) { background: #f8fafc; }
 
-/* Mensagem de exemplo */
 .msg {
   font-family: var(--fonte-codigo);
   font-weight: 700;
