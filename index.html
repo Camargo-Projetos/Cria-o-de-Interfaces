@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site de demonstração de usabilidade, UX, acessibilidade e responsividade feito com HTML e CSS.">
+  <meta name="theme-color" content="#1e40af">
+  <title>Início — Interface Clara</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><svg class="brand-icone" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><rect x="2" y="2" width="24" height="24" rx="6" fill="#fff"/><path d="M8 14.5l4 4 8-9" fill="none" stroke="#1e40af" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Interface Clara</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-t">
+      <div class="container">
+        <p class="hero-sobre">Guia prático de Interação Humano-Computador</p>
+        <h1 id="hero-t">Interfaces claras são interfaces que todos conseguem usar.</h1>
+        <p class="lead">Este site mostra, na prática, como usabilidade, experiência do usuário, acessibilidade e responsividade aparecem em uma página web feita somente com HTML e CSS.</p>
+        <p class="hero-acoes">
+          <a class="btn btn-principal" href="heuristicas.html">Começar por usabilidade <span aria-hidden="true">→</span></a>
+          <a class="btn btn-secundario" href="acessibilidade.html">Ver acessibilidade</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="bloco" aria-labelledby="temas-t">
+      <div class="container">
+        <h2 id="temas-t">O que você encontra aqui</h2>
+        <p>Cada tema tem uma página própria. Clique em qualquer cartão para abrir.</p>
+        <div class="cards">
+          <article class="card card-link">
+            <h3><a href="heuristicas.html">Usabilidade</a></h3>
+            <p>As 10 heurísticas de Nielsen e como cada uma foi aplicada neste site.</p>
+            <p class="card-autor">Por João Manoel</p>
+          </article>
+          <article class="card card-link">
+            <h3><a href="ux.html">Experiência do usuário</a></h3>
+            <p>Os cinco planos da UX, prototipação e o significado dos símbolos.</p>
+            <p class="card-autor">Por João Manoel</p>
+          </article>
+          <article class="card card-link">
+            <h3><a href="cores-tipografia.html">Cores e tipografia</a></h3>
+            <p>Paleta, contraste e escolha de fontes para leitura confortável.</p>
+            <p class="card-autor">Por Lucas Samuel</p>
+          </article>
+          <article class="card card-link">
+            <h3><a href="acessibilidade.html">Acessibilidade</a></h3>
+            <p>Diretrizes de acessibilidade na prática, com um formulário de exemplo.</p>
+            <p class="card-autor">Por Lucas Samuel</p>
+          </article>
+          <article class="card card-link">
+            <h3><a href="responsividade.html">Responsividade</a></h3>
+            <p>Como a mesma página se adapta a celular, tablet e computador.</p>
+            <p class="card-autor">Por Lucas Samuel</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco bloco-suave" aria-labelledby="conceitos-t">
+      <div class="container">
+        <h2 id="conceitos-t">Os quatro conceitos em resumo</h2>
+        <div class="tabela-wrap" role="region" aria-label="Conceitos aplicados e onde vê-los" tabindex="0">
+          <table>
+            <caption>Conceitos aplicados e onde vê-los</caption>
+            <thead><tr><th scope="col">Conceito</th><th scope="col">Ideia central</th><th scope="col">Onde ver</th></tr></thead>
+            <tbody>
+            <tr><th scope="row">Usabilidade</th><td>O usuário consegue realizar a tarefa com facilidade e sem errar.</td><td><a href="heuristicas.html">Usabilidade</a></td></tr>
+            <tr><th scope="row">Experiência do usuário (UX)</th><td>Tudo o que a pessoa sente e percebe ao usar o site.</td><td><a href="ux.html">Experiência (UX)</a> e <a href="cores-tipografia.html">Cores e tipografia</a></td></tr>
+            <tr><th scope="row">Acessibilidade</th><td>O site pode ser usado por pessoas com diferentes necessidades.</td><td><a href="acessibilidade.html">Acessibilidade</a></td></tr>
+            <tr><th scope="row">Responsividade</th><td>O layout se adapta a qualquer tamanho de tela.</td><td><a href="responsividade.html">Responsividade</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" aria-labelledby="ajuda-t">
+      <div class="container ajuda">
+        <h2 id="ajuda-t">Ajuda: como navegar</h2>
+        <details>
+          <summary>Como mudar de página?</summary>
+          <p>Use o menu no topo. A página em que você está fica com fundo branco e sublinhado. No fim de cada página há botões de “Anterior” e “Próxima”.</p>
+        </details>
+        <details>
+          <summary>Como usar só o teclado?</summary>
+          <p>Use <kbd>Tab</kbd> para avançar e <kbd>Shift</kbd> + <kbd>Tab</kbd> para voltar. Aperte <kbd>Enter</kbd> para abrir um link. O item selecionado fica com um contorno bem visível. O primeiro <kbd>Tab</kbd> mostra o atalho “Pular para o conteúdo”.</p>
+        </details>
+        <details>
+          <summary>Como voltar ao topo da página?</summary>
+          <p>Use o link “↑ Voltar ao topo” no rodapé de todas as páginas.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="bloco bloco-suave" aria-labelledby="equipe-t">
+      <div class="container">
+        <h2 id="equipe-t">Quem fez este site</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>João Manoel Camargo</h3>
+            <p>Estrutura base, página inicial, usabilidade e experiência do usuário.</p>
+          </article>
+          <article class="card">
+            <h3>Lucas Samuel dos Santos</h3>
+            <p>Cores e tipografia, acessibilidade e responsividade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Interface Clara</h2>
+          <p>Site de demonstração de usabilidade, experiência do usuário, acessibilidade e responsividade, feito somente com HTML e CSS.</p>
+        </div>
+        <nav aria-label="Páginas do site">
+          <h2>Páginas</h2>
+          <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="heuristicas.html">Usabilidade</a></li>
+          <li><a href="ux.html">Experiência (UX)</a></li>
+          <li><a href="cores-tipografia.html">Cores e tipografia</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="responsividade.html">Responsividade</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Equipe</h2>
+          <ul>
+            <li>João Manoel Camargo</li>
+            <li>Lucas Samuel dos Santos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Atividade da disciplina de Interação Humano-Computador.</p>
+        <a href="#topo">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
